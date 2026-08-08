@@ -1,0 +1,33 @@
+{
+  "data_quality": {
+    "null_counts": {},
+    "monthly_charges_out_of_range": 0,
+    "tenure_out_of_range": 0
+  },
+  "drift": {
+    "per_feature": {
+      "tenure": {
+        "train_mean": 32.201,
+        "train_std": 24.572,
+        "recent_mean": 33.199,
+        "z_shift": 0.041,
+        "flagged": false
+      },
+      "MonthlyCharges": {
+        "train_mean": 64.98,
+        "train_std": 29.987,
+        "recent_mean": 63.622,
+        "z_shift": 0.045,
+        "flagged": false
+      },
+      "TotalCharges": {
+        "train_mean": 2278.767,
+        "train_std": 2268.412,
+        "recent_mean": 2314.06,
+        "z_shift": 0.016,
+        "flagged": false
+      }
+    },
+    "any_drift_flagged": false
+  }
+}

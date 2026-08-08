@@ -1,0 +1,2 @@
+{"timestamp_utc": "2026-08-08T16:30:43.318995+00:00", "source_file": "../data/raw/initial_batch.csv", "file_hash": "fb4c51d6c8af3c2a", "rows_ingested": 6000, "target_table": "../data/processed/training_table.csv"}
+{"timestamp_utc": "2026-08-08T16:30:59.220860+00:00", "source_file": "../data/raw/daily_2026_08_07.csv", "file_hash": "54b67829987e97f6", "rows_ingested": 500, "target_table": "../data/processed/training_table.csv"}

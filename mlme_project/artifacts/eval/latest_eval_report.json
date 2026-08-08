@@ -1,0 +1,39 @@
+{
+  "model_version": "v20260808_163110",
+  "promotion_rule": {
+    "min_auc": 0.8,
+    "max_auc_regression_vs_baseline": 0.01
+  },
+  "promoted_model": "candidate_random_forest",
+  "baseline_logistic_regression": {
+    "validation": {
+      "accuracy": 0.7692,
+      "roc_auc": 0.8579,
+      "precision": 0.5476,
+      "recall": 0.813,
+      "f1": 0.6544,
+      "n_samples": 975,
+      "positive_rate": 0.2687
+    }
+  },
+  "candidate_random_forest": {
+    "validation": {
+      "accuracy": 0.7682,
+      "roc_auc": 0.8532,
+      "precision": 0.5492,
+      "recall": 0.7672,
+      "f1": 0.6401,
+      "n_samples": 975,
+      "positive_rate": 0.2687
+    }
+  },
+  "chosen_model_test_set_metrics": {
+    "accuracy": 0.7405,
+    "roc_auc": 0.8139,
+    "precision": 0.5108,
+    "recall": 0.728,
+    "f1": 0.6003,
+    "n_samples": 975,
+    "positive_rate": 0.2677
+  }
+}

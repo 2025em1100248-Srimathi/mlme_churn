@@ -1,0 +1,31 @@
+# configs/config.yaml
+# Central config - avoids magic numbers scattered across scripts.
+# Not auto-loaded by every script in this minimal version (scripts use
+# argparse defaults that mirror these values), but this is the
+# single reference for what those values are and why.
+
+data:
+  raw_dir: data/raw
+  processed_table: data/processed/training_table.csv
+  ingestion_log: data/processed/ingestion_log.jsonl
+
+training:
+  test_size: 0.30
+  val_test_split: 0.50   # of the 30% held out, split evenly val/test
+  random_state: 42
+
+promotion_rule:
+  min_auc: 0.80
+  max_auc_regression_vs_baseline: 0.01
+
+serving:
+  model_path: models/latest.joblib
+  host: 0.0.0.0
+  port: 8000
+
+monitoring:
+  drift_z_threshold: 0.5
+  retrain:
+    min_new_rows: 500
+    max_auc_drop: 0.03
+    max_consecutive_drift_flags: 3
